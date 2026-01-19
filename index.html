@@ -1,11 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umut Kilictas</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Umut | Kişisel Sayfa</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #f5f5f5;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 800px;
+      width: 90%;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 3rem;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    h1 span {
+      color: #4dd0e1;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #dcdcdc;
+      margin-bottom: 2rem;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      background: #4dd0e1;
+      color: #0f2027;
+    }
+
+    .btn-primary:hover {
+      background: transparent;
+      border-color: #4dd0e1;
+      color: #4dd0e1;
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1px solid #aaa;
+      color: #f5f5f5;
+    }
+
+    .btn-outline:hover {
+      background: #f5f5f5;
+      color: #0f2027;
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      font-size: 0.85rem;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>Umut</h1>
+  <div class="container">
+    <h1>Merhaba, ben <span>Umut</span> 👋</h1>
+    <p>
+      Bilgisayar Mühendisiyim. Yazılım geliştirme, problem çözme ve ölçeklenebilir sistemler üzerine çalışıyorum. Burası GitHub Pages üzerinden yayına aldığım
+      demo sayfam. Daha fazlası için kişisel web sitemi ziyaret edebilirsiniz.
+    </p>
+
+    <div class="buttons">
+      <a href="https://github.com/" target="_blank" class="btn btn-primary">GitHub</a>
+      <a href="https://umutkilictas.com.tr" class="btn btn-outline">Web Sitem</a>
+    </div>
+
+    <footer>
+      © 2026 Umut Kılıçtaş · GitHub Pages
+    </footer>
+  </div>
 </body>
 </html>
